@@ -26,6 +26,35 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Update NestJS Version
+```bash
+# check the installed version
+$ nest --version
+
+# update dependencies
+$ npm i -g npm-check-updates
+
+# update package.json
+$ ncu -u -f /^@nestjs/
+
+# remove old package-lock.json, node_modules
+$ rm package-lock.json
+$ rm -rf node_modules
+```
+<br>
+Sample after running the package.json update
+
+```
+[====================] 6/6 100%
+
+ @nestjs/cli               ^9.0.0  →   ^10.4.2
+ @nestjs/common            ^9.0.0  →  ^10.3.10
+ @nestjs/core              ^9.0.0  →  ^10.3.10
+ @nestjs/platform-express  ^9.0.0  →  ^10.3.10
+ @nestjs/schematics        ^9.0.0  →   ^10.1.3
+ @nestjs/testing           ^9.0.0  →  ^10.3.10
+```
+
 ## Installation
 
 ```bash
